@@ -1,0 +1,298 @@
+/* ==========================
+   Custom Admin Dashboard CSS
+   ========================== */
+:root {
+    --bs-primary: #FEA116;
+    --bs-primary-rgb: 254, 161, 22;
+}
+
+/* Tombol utama */
+.btn-primary {
+    background-color: #FEA116 !important;
+    border-color: #FEA116 !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #d88908 !important;
+    border-color: #d88908 !important;
+    color: #ffffff !important;
+}
+
+/* Tombol outline */
+.btn-outline-primary {
+    color: #FEA116 !important;
+    border-color: #FEA116 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #FEA116 !important;
+    border-color: #FEA116 !important;
+    color: #ffffff !important;
+}
+
+/* Text primary */
+.text-primary {
+    color: #FEA116 !important;
+}
+
+/* Background label primary */
+.bg-label-primary {
+    background-color: rgba(254, 161, 22, 0.16) !important;
+    color: #FEA116 !important;
+}
+
+/* Sidebar */
+.bg-menu-theme {
+    background-color: #0F172B !important;
+    color: #ffffff !important;
+}
+
+/* Brand/sidebar title */
+.app-brand-text {
+    color: #ffffff !important;
+}
+
+/* Menu text */
+.bg-menu-theme .menu-link,
+.bg-menu-theme .menu-header,
+.bg-menu-theme .menu-header-text {
+    color: #dcdcdc !important;
+}
+
+/* Menu icon */
+.bg-menu-theme .menu-icon {
+    color: #dcdcdc !important;
+}
+
+/* Menu hover */
+.bg-menu-theme .menu-link:hover {
+    background-color: rgba(254, 161, 22, 0.12) !important;
+    color: #FEA116 !important;
+}
+
+/* Menu active */
+.bg-menu-theme .menu-item.active > .menu-link {
+    background-color: #FEA116 !important;
+    color: #ffffff !important;
+    border-radius: 0.5rem;
+}
+
+.bg-menu-theme .menu-item.active > .menu-link .menu-icon,
+.bg-menu-theme .menu-item.active > .menu-link div {
+    color: #ffffff !important;
+}
+
+/* Navbar */
+.bg-navbar-theme {
+    background-color: #ffffff !important;
+}
+
+/* Card */
+.card {
+    border-radius: 0.75rem;
+}
+
+/* Link */
+a {
+    color: #FEA116;
+}
+
+a:hover {
+    color: #d88908;
+}
+
+/* Badge atau avatar icon */
+.avatar-initial.bg-label-info,
+.avatar-initial.bg-label-success,
+.avatar-initial.bg-label-warning {
+    background-color: rgba(254, 161, 22, 0.16) !important;
+    color: #FEA116 !important;
+}
+
+/* ==========================
+   Custom Login/Register CSS
+   ========================== */
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Auth wrapper */
+.auth-wrapper {
+    min-height: 100vh;
+}
+
+/* Card auth */
+.auth-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .25);
+}
+
+/* Left side */
+.auth-left {
+    background-color: #0F172B;
+    color: #ffffff;
+}
+
+.brand-title {
+    font-family: 'Pacifico', cursive;
+    color: #FEA116;
+}
+
+.btn-primary {
+    background-color: #FEA116;
+    border-color: #FEA116;
+}
+
+.btn-primary:hover {
+    background-color: #d88908;
+    border-color: #d88908;
+}
+
+.text-primary {
+    color: #FEA116 !important;
+}
+
+a {
+    color: #FEA116;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d88908;
+}
+
+/* Background hero login/register */
+body.login-bg,
+body.register-bg {
+    background: linear-gradient(rgba(15, 23, 43, .90), rgba(15, 23, 43, .90)),
+                url("../img/bg-hero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+    .auth-left {
+        display: none !important;
+    }
+}
+.hero-header {
+    width: 100%;
+    min-height: 100vh; /* full height viewport */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* ini bikin isi di tengah secara vertikal */
+    padding-top: 60px; /* bisa disesuaikan */
+    padding-bottom: 60px; /* opsional */
+}
+@keyframes fly-to-cart {
+  0% { transform: translate(0,0) scale(1); opacity:1; }
+  100% { transform: translate(300px, -300px) scale(0.1); opacity:0; }
+}
+
+.flying-item {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  animation: fly-to-cart 0.8s forwards;
+}
+/* file custom.css atau style di layout */
+.qty-wrapper {
+    display: flex;
+    gap: 1px; /* jarak antara tombol dan input */
+    min-width: 120px;
+}
+
+.qty-wrapper .btn {
+    flex: 0 0 35px; /* tombol tetap ukuran sama */
+    height: 35px;
+}
+
+.qty-wrapper .qty-input {
+    flex: 1; /* input mengambil sisa ruang */
+    text-align: center;
+}/* ===== LOGO ===== */
+
+.logo-text{
+    font-size:24px;
+    font-weight: 800;
+    color: #f59e0b;
+}
+
+/* ===== SIDEBAR ===== */
+
+.bg-menu-theme{
+    background: #07112d !important;
+}
+
+/* ===== BRAND AREA ===== */
+
+.app-brand{
+    height: 90px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+/* ===== MENU ===== */
+
+.menu-link{
+    color: #ffffff !important;
+    font-size: 18px;
+}
+
+.menu-link i{
+    font-size: 22px !important;
+}
+
+.menu-header-text{
+    color: rgba(255,255,255,.7) !important;
+}
+
+/* ===== MENU ACTIVE ===== */
+
+.menu-item.active .menu-link{
+    background: #f59e0b !important;
+    color: white !important;
+    border-radius: 12px;
+    margin: 0 10px;
+}
+
+/* ===== MENU HOVER ===== */
+
+.menu-link:hover{
+    background: #f59e0b !important;
+    color: white !important;
+    border-radius: 12px;
+    margin: 0 10px;
+}
+
+/* ===== ICON ORANGE ===== */
+
+.text-warning{
+    color: #f59e0b !important;
+}
+
+/* ===== CARD ===== */
+
+.card{
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+/* ===== BUTTON ===== */
+
+.btn-primary{
+    background: #f59e0b !important;
+    border-color: #f59e0b !important;
+}
+
+.btn-primary:hover{
+    background: #e58d00 !important;
+    border-color: #e58d00 !important;
+}
+
+
